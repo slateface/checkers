@@ -1,0 +1,81 @@
+﻿@model Checkers.Models.GameModel
+@{
+	var checkerColor = (Model.IsPlayerOne ? "Black" : "Red");
+}
+<h2 id="greeting">You are playing with @checkerColor checkers</h2>
+
+<script type="text/javascript">
+	$(function () {
+		checkers.init();
+		checkers.player = '@checkerColor.ToLower()';
+		var game = checkers.game;
+		
+		game.playHappened = function (moveResult) {
+			checkers.updateBoard(moveResult.BoardState);
+			if (moveResult.IsSuccessful) {
+				$("#log").append(moveResult.Message + '<br/><br/>');
+			} else {
+				$('#playError').html(moveResult.Message);
+			}
+		};
+
+		$('#sendMove').click(function() {
+			checkers.sendMove();
+		});
+
+		$('#newGame').click(function() {
+			game.newGame(function(boardState) {
+				checkers.updateBoard(boardState);
+			});
+		});
+		
+		var playerName = prompt("What is your name?", "@checkerColor");
+		$('#greeting').html(playerName + " is playing with @checkerColor checkers");
+
+		$('input[type=button]').button();
+
+		// Start the connection
+		$.connection.hub.start({
+			callback: function() {
+				game.signIn(@(Model.IsPlayerOne ? "true" : "false"), playerName);
+			}
+		});
+
+	});
+</script>
+
+<table border="1">
+	<tr>
+		<td rowspan="2">
+			@{ Html.RenderPartial("_Board"); }
+		</td>
+		<td>
+			<h3>Play</h3>
+			<table>
+				<tr>
+					<td class="entry">From</td>
+					<td>
+						<input id="source" type="text" maxlength="2" /></td>
+				<tr>
+					<td class="entry">to</td>
+					<td>
+						<input id="destination" type="text" maxlength="2" /></td>
+				</tr>
+			</table>
+			<div class="buttons">
+				<input id="sendMove" type="button" value="Move" />
+				<input id="newGame" type="button" value="New Game" />
+			</div>
+			<div id="playError">
+			</div>
+		</td>
+		<td rowspan="2" id="log-container">
+			<h3>Log</h3>
+			<div id="log">
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>Chat</td>
+	</tr>
+</table>

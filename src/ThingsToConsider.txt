@@ -1,0 +1,10 @@
+Something needs to be "flipped"
+
+Either the display, or the single man movment algorithm
+  
+The reason: Single men can only move forward. which means that forward for black, would be reverse for red. As turns are completed the algorythm for forward movement would neev to "flip"
+
+Alternately, If the display can be manipulated so that the (0,0) for black is in the (7,7) position for the red player and viceversa this may work better[Player One's checkers are aligned at the bottom of player one's screen while Player Two's checkers are aligned at the bottom of player Two's Screen]. In my mind, this would be cleaner presentation and would simplify movement coding.
+
+ANOTHER THING TO THINK ABOUT:
+ The legal movement algorithms should be run after the switch from opponent to player BEFORE THE PLAYER EXECUTES A MOVE. This is the case because the "game" needs to know if there are 0 legal moves, at which point the game ends...

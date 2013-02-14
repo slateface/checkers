@@ -1,0 +1,12 @@
+﻿<h2>Watch The Game</h2>
+<script language="javascript">
+	$(function () {
+		checkers.init();
+
+		// Start the connection
+		$.connection.hub.start();
+	});
+</script>
+@{ Html.RenderPartial("_Board"); }
+
+

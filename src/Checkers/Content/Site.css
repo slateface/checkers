@@ -1,0 +1,235 @@
+/*
+Changes made by Ben Plont 1/20/2013:
+
+ammended .redChecker
+ammended .blackChecker
+ammended .blackKing
+
+added .redKing
+
+added Tangerine to body font-family to test font links
+added several other fonts to the font folder, 
+added font-family to #play error
+*/
+
+
+body {
+	font-size: 75%;
+	font-family: Tangerine, Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+	color: #232323;
+	background-color: #fff;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset {
+	border: 1px solid #ddd;
+	padding: 0 1.4em 1.4em 1.4em;
+	margin: 0 0 1.5em 0;
+}
+
+legend {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+textarea {
+	min-height: 75px;
+}
+
+.editor-label {
+	margin: 1em 0 0 0;
+}
+
+.editor-field {
+	margin: 0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error {
+	color: #ff0000;
+}
+
+.field-validation-valid {
+	display: none;
+}
+
+.input-validation-error {
+	border: 1px solid #ff0000;
+	background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+.key {
+	text-align: center;
+	vertical-align: middle;
+	margin: 6px;
+}
+
+.tile {
+	width: 50px;
+	height: 50px;
+}
+
+.blackTile {
+	background-image: url('black_marble_50.jpg');
+}
+
+.whiteTile {
+	background-image: url('white_marble_50.jpg');
+}
+
+.redChecker {
+	width: 50px;
+	height: 50px;
+	
+	/*ammended by Ben Plont 1/20/2013
+	changed the background url
+	and added the following */
+	
+	background-image: url('redChecker.jpg');
+	position: relative; 
+	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
+	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+	background-size: 190px;
+	margin: 70px auto;
+	border-radius: 50%;
+	position: relative;
+	
+	/*end change bp 1/20 */
+}
+
+/*ammended by Ben Plont 1/20/2013
+added .redKing method */
+.redKing {
+	background-image: url('redChecker.jpg');
+	width: 50px;
+	height: 50px;
+	position: relative;
+	animation-name: rotate, yspin;
+	animation-duration: 5s,5s,5s;
+	animation-iteration-count: infinite,infinite,infinite;
+	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
+	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+	background-size: 190px;
+	margin: 70px auto;
+	border-radius: 50%;
+	position: relative;
+	animation-iteration-count: infinite,infinite,infinite;
+
+/* end .redKing addition bp 1/20 */
+}
+
+.blackChecker {
+	width: 50px;
+	height: 50px;
+	background-image: url('blackChecker.jpg');
+	
+	/*ammended by Ben Plont 1/20/2013
+	changed the background url
+	added the following*/
+	
+	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
+	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+	background-size: 190px;
+	margin: 70px auto;
+	border-radius: 50%;
+	position: relative; 
+
+	/*end change bp 1/20 */ 
+}
+
+.blackKing {
+	width: 50px;
+	height: 50px;
+	background-image: url('blackChecker.jpg');
+	
+	/*Ammended by Ben Plont 1/20/2013
+	changed url and 
+	background-size: 125%;
+	added the following*/
+	
+	animation-name: rotate, yspin;
+	animation-duration: 5s,5s,5s;
+	animation-iteration-count: infinite,infinite,infinite;
+	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
+	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+	background-size: 190px;
+	margin: 70px auto;
+	border-radius: 50%;
+	position: relative;
+	animation-iteration-count: infinite,infinite,infinite;
+	
+	/*end change bp 1/20 */ 
+}
+
+#playError {
+	font-family: Viper, "Helvetica Neue", Helvetica, Sans-Serif;
+	color: red;
+	font-weight: bold;
+}
+
+td#log-container {
+	vertical-align: top;
+	width: 30%;
+}
+
+td#log-container h3 {
+	text-align: center;
+}
+
+.entry
+{
+	text-align: right;
+}
+
+div.buttons
+{
+	text-align: center;
+}
+
+div.buttons input
+{
+	width: 100px;
+}
+
+#source, #destination
+{
+	width: 20px;
+}
+
+/* Font additions
+----------------------------------------*/
+
+@font-face {  
+	  font-family: 'Viper' ;  
+	  src: url( 'fonts/Viper.ttf' ) format("truetype");  
+} 
+	
+@font-face {    
+	font-family: 'Tangerine' ;  
+	src: url('fonts/Tangerine.eot'); /* EOT file for IE */
+	src: url( 'fonts/Tangerine.ttf' ) format("truetype");  
+} 
+	
+@font-face {    
+	font-family: 'ghosts' ;  
+	src: url('fonts/ghosts.eot'); /* EOT file for IE */
+	src: url( 'fonts/ghosts.ttf' ) format("truetype");  
+}
+	
+@font-face {  
+	  font-family: 'Dislex' ;  
+	  src: url( 'fonts/Dislex.ttf' ) format("truetype");  
+} 
