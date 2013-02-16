@@ -85,6 +85,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blackChecker.jpg" />
+    <Content Include="Content\black_marble.jpg" />
+    <Content Include="Content\black_marble_50.jpg" />
+    <Content Include="Content\fonts\BebasNeue-webfont.svg" />
+    <Content Include="Content\fonts\Dharma Type Font License.txt" />
+    <Content Include="Content\fonts\Viper.svg" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\redChecker.jpg" />
+    <Content Include="Content\redChecker.png" />
+    <Content Include="Content\smokejpg.jpg" />
     <Content Include="Content\themes\base\jquery.ui.accordion.css" />
     <Content Include="Content\themes\base\jquery.ui.all.css" />
     <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
@@ -131,6 +141,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="Content\white_marble.jpg" />
+    <Content Include="Content\white_marble_50.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\jquery-ui.css" />
@@ -147,6 +159,24 @@
     <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <None Include="Content\fonts\BebasNeue-webfont.eot" />
+    <None Include="Content\fonts\BebasNeue-webfont.ttf" />
+    <None Include="Content\fonts\BebasNeue-webfont.woff" />
+    <None Include="Content\fonts\Dislex.ttf" />
+    <None Include="Content\fonts\ghosts.eot" />
+    <None Include="Content\fonts\ghosts.ttf" />
+    <None Include="Content\fonts\h2d2.eot" />
+    <None Include="Content\fonts\h2d2.ttf" />
+    <None Include="Content\fonts\PORCELAI.FON" />
+    <None Include="Content\fonts\PORCELAI.PFB" />
+    <None Include="Content\fonts\PORCELAI.PFM" />
+    <None Include="Content\fonts\porcelain.ttf" />
+    <None Include="Content\fonts\Tangerine.eot" />
+    <None Include="Content\fonts\Tangerine.ttf" />
+    <None Include="Content\fonts\Tangerine_Regular.ttf" />
+    <None Include="Content\fonts\Viper.eot" />
+    <None Include="Content\fonts\Viper.ttf" />
+    <None Include="Content\fonts\Viper.woff" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
     <Content Include="Scripts\Checkers.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />

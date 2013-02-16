@@ -14,10 +14,12 @@ added font-family to #play error
 
 
 body {
-	font-size: 75%;
-	font-family: Tangerine, Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+	font-size: 100%;
+	font-family: Dislex, Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
 	color: #232323;
-	background-color: #fff;
+	background-image:url('photo.JPG');
+	background-size:cover;
+    background-repeat:no-repeat;
 }
 
 /* Styles for basic forms
@@ -90,92 +92,71 @@ textarea {
 	background-image: url('white_marble_50.jpg');
 }
 
-.redChecker {
-	width: 50px;
-	height: 50px;
+.redChecker 
+{
+    background-image: url('redChecker.jpg');
+    background-size: 110px auto;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
+    height: 40px;
+    margin: 5px auto;
+    position: relative;
+    width: 40px;
 	
-	/*ammended by Ben Plont 1/20/2013
-	changed the background url
-	and added the following */
-	
-	background-image: url('redChecker.jpg');
-	position: relative; 
-	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
-	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-	background-size: 190px;
-	margin: 70px auto;
-	border-radius: 50%;
-	position: relative;
-	
-	/*end change bp 1/20 */
 }
 
-/*ammended by Ben Plont 1/20/2013
-added .redKing method */
-.redKing {
-	background-image: url('redChecker.jpg');
-	width: 50px;
-	height: 50px;
-	position: relative;
-	animation-name: rotate, yspin;
-	animation-duration: 5s,5s,5s;
-	animation-iteration-count: infinite,infinite,infinite;
-	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
-	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-	background-size: 190px;
-	margin: 70px auto;
-	border-radius: 50%;
-	position: relative;
-	animation-iteration-count: infinite,infinite,infinite;
-
-/* end .redKing addition bp 1/20 */
+.redKing 
+{
+    background-image: url('redChecker.jpg');
+    width: 40px;
+    height: 40px;
+    position: relative;
+    animation-name: rotate, yspin;
+    animation-duration: 5s,5s,5s;
+    animation-iteration-count: infinite,infinite,infinite;
+    box-shadow: inset 8px 0 12px 3px rgba(0,0,0,0.9),
+    inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+    background-size: 190px;
+    margin: 5px auto;
+    border-radius: 50%;
+    position: relative;
+    animation-iteration-count: infinite,infinite,infinite;
+    
 }
 
 .blackChecker {
 	width: 50px;
 	height: 50px;
 	background-image: url('blackChecker.jpg');
-	
-	/*ammended by Ben Plont 1/20/2013
-	changed the background url
-	added the following*/
-	
-	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
-	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-	background-size: 190px;
-	margin: 70px auto;
-	border-radius: 50%;
-	position: relative; 
-
-	/*end change bp 1/20 */ 
+	background-size: 110px auto;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
+    height: 40px;
+    margin: 5px auto;
+    position: relative;
+    width: 40px;
 }
 
 .blackKing {
-	width: 50px;
-	height: 50px;
 	background-image: url('blackChecker.jpg');
-	
-	/*Ammended by Ben Plont 1/20/2013
-	changed url and 
-	background-size: 125%;
-	added the following*/
-	
-	animation-name: rotate, yspin;
-	animation-duration: 5s,5s,5s;
-	animation-iteration-count: infinite,infinite,infinite;
-	box-shadow: inset 16px 0 35px 3px rgba(0,0,0,0.9),
-	inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-	background-size: 190px;
-	margin: 70px auto;
-	border-radius: 50%;
-	position: relative;
-	animation-iteration-count: infinite,infinite,infinite;
-	
-	/*end change bp 1/20 */ 
+	width: 40px;
+    height: 40px;
+    position: relative;
+    animation-name: rotate, yspin;
+    animation-duration: 5s,2s,5s;
+    animation-iteration-count: infinite,infinite,infinite;
+    box-shadow: inset 8px 0 12px 3px rgba(0,0,0,0.9),
+    inset -3px 0 5px 2px  rgba(255,255,255,0.16);
+    background-size: 190px;
+    margin: 5px;
+    border-radius: 50%;
+    position: relative;
+    animation-iteration-count: infinite,infinite,infinite;
 }
 
 #playError {
 	font-family: Viper, "Helvetica Neue", Helvetica, Sans-Serif;
+	font-size: 100%;
 	color: red;
 	font-weight: bold;
 }
@@ -196,6 +177,8 @@ td#log-container h3 {
 
 div.buttons
 {
+	font-family: Arial, Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+	font-size: 75%;
 	text-align: center;
 }
 
@@ -233,3 +216,16 @@ div.buttons input
 	  font-family: 'Dislex' ;  
 	  src: url( 'fonts/Dislex.ttf' ) format("truetype");  
 } 
+
+@keyframes yspin{
+0%{transform:rotateY(60deg);}
+48%{transform:rotateY(-60deg);}
+52%{transform:rotateY(-60deg);}
+100%{transform:rotateY(60deg);}
+  }
+   
+@keyframes rotate {
+   0%{background-position: 0px;}
+  50%{background-position:35px;}
+  100%{background-position:0px;}
+}  
