@@ -17,7 +17,7 @@ body {
 	font-size: 100%;
 	font-family: Dislex, Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
 	color: #232323;
-	background-image:url('photo.JPG');
+	background-image:url('images/background.JPG');
 	background-size:cover;
     background-repeat:no-repeat;
 }
@@ -85,16 +85,16 @@ textarea {
 }
 
 .blackTile {
-	background-image: url('black_marble_50.jpg');
+	background-image: url('images/black_marble_50.jpg');
 }
 
 .whiteTile {
-	background-image: url('white_marble_50.jpg');
+	background-image: url('images/ThassosWhite.jpg');
 }
 
 .redChecker 
 {
-    background-image: url('redChecker.jpg');
+    background-image: url('images/redChecker.jpg');
     background-size: 110px auto;
     border-radius: 50% 50% 50% 50%;
     box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
@@ -107,7 +107,7 @@ textarea {
 
 .redKing 
 {
-    background-image: url('redChecker.jpg');
+    background-image: url('images/redChecker.jpg');
     width: 40px;
     height: 40px;
     position: relative;
@@ -127,7 +127,7 @@ textarea {
 .blackChecker {
 	width: 50px;
 	height: 50px;
-	background-image: url('blackChecker.jpg');
+	background-image: url('images/blackChecker.jpg');
 	background-size: 110px auto;
     border-radius: 50% 50% 50% 50%;
     box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
@@ -138,7 +138,7 @@ textarea {
 }
 
 .blackKing {
-	background-image: url('blackChecker.jpg');
+	background-image: url('images/blackChecker.jpg');
 	width: 40px;
     height: 40px;
     position: relative;
