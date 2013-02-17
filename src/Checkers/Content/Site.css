@@ -94,43 +94,38 @@ textarea {
 
 .redChecker 
 {
-    background-image: url('images/redChecker.jpg');
+    width: 40px;
+	height: 40px;
+	background-image: url('images/redChecker.jpg');
     background-size: 110px auto;
     border-radius: 50% 50% 50% 50%;
     box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
-    height: 40px;
     margin: 5px auto;
     position: relative;
     width: 40px;
+}
 	
+.blackChecker {
+	width: 40px;
+	height: 40px;
+	background-image: url('images/blackChecker.jpg');
+	background-size: 190px auto;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
+    margin: 5px auto;
+    position: relative;
+    width: 40px;
 }
 
 .redKing 
 {
-    background-image: url('images/redChecker.jpg');
-    width: 40px;
-    height: 40px;
-    position: relative;
+    animation-duration: 5s, 5s, 5s;
+    animation-iteration-count: infinite, infinite, infinite;
     animation-name: rotate, yspin;
-    animation-duration: 5s,5s,5s;
-    animation-iteration-count: infinite,infinite,infinite;
-    box-shadow: inset 8px 0 12px 3px rgba(0,0,0,0.9),
-    inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-    background-size: 190px;
-    margin: 5px auto;
-    border-radius: 50%;
-    position: relative;
-    animation-iteration-count: infinite,infinite,infinite;
-    
-}
-
-.blackChecker {
-	width: 50px;
-	height: 50px;
-	background-image: url('images/blackChecker.jpg');
-	background-size: 110px auto;
+    background-image: url("images/redChecker.jpg");
+    background-size: 50px auto;
     border-radius: 50% 50% 50% 50%;
-    box-shadow: 8px 0 12px 2px rgba(0, 0, 0, 0.9) inset, .5px 0 2px 2px rgba(255, 255, 255, 0.16) inset;
+    box-shadow: 16px 0 12px 3px rgba(0, 0, 0, 0.9) inset, -3px 0 15px 2px rgba(255, 255, 255, 0.16) inset;
     height: 40px;
     margin: 5px auto;
     position: relative;
@@ -138,21 +133,18 @@ textarea {
 }
 
 .blackKing {
-	background-image: url('images/blackChecker.jpg');
-	width: 40px;
-    height: 40px;
-    position: relative;
+	animation-duration: 5s, 5s, 5s;
+    animation-iteration-count: infinite, infinite, infinite;
     animation-name: rotate, yspin;
-    animation-duration: 5s,2s,5s;
-    animation-iteration-count: infinite,infinite,infinite;
-    box-shadow: inset 8px 0 12px 3px rgba(0,0,0,0.9),
-    inset -3px 0 5px 2px  rgba(255,255,255,0.16);
-    background-size: 190px;
-    margin: 5px;
-    border-radius: 50%;
+    background-image: url("images/blackChecker.jpg");
+    background-size: 50px auto;
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 16px 0 12px 3px rgba(0, 0, 0, 0.9) inset, -3px 0 15px 2px rgba(255, 255, 255, 0.16) inset;
+    height: 40px;
+    margin: 5px auto;
     position: relative;
-    animation-iteration-count: infinite,infinite,infinite;
-}
+    width: 40px;
+    }
 
 #playError {
 	font-family: Viper, "Helvetica Neue", Helvetica, Sans-Serif;
