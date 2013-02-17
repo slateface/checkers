@@ -91,6 +91,11 @@
     <Content Include="Content\fonts\BebasNeue-webfont.svg" />
     <Content Include="Content\fonts\Dharma Type Font License.txt" />
     <Content Include="Content\fonts\Viper.svg" />
+    <Content Include="Content\images\background.JPG" />
+    <Content Include="Content\images\blackChecker.jpg" />
+    <Content Include="Content\images\black_marble_50.jpg" />
+    <Content Include="Content\images\redChecker.jpg" />
+    <Content Include="Content\images\ThassosWhite.jpg" />
     <Content Include="Content\jquery-ui.css" />
     <Content Include="Content\redChecker.jpg" />
     <Content Include="Content\redChecker.png" />

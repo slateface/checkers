@@ -13,7 +13,7 @@
 		game.playHappened = function (moveResult) {
 			checkers.updateBoard(moveResult.BoardState);
 			if (moveResult.IsSuccessful) {
-				$("#log").append(moveResult.Message + '<br/><br/>');
+				$("#log").append('\n' + moveResult.Message + '\n');
 			} else {
 				$('#playError').html(moveResult.Message);
 			}
@@ -71,9 +71,8 @@
 		</td>
 		<td rowspan="2" id="log-container">
 			<h3>Log</h3>
-			<div id="log">
-			</div>
-		</td>
+            <center><textarea id="log" style="font-family:Dislex" readonly rows="15" cols="25" text-align="left">GAME ON!</textarea></center>
+        </td>
 	</tr>
 	<tr>
 		<td>Chat</td>
